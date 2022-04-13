@@ -15,11 +15,12 @@ export default function TitlebarImageList() {
       <>
     <AppForm>
     <Typography variant="h3" gutterBottom marked="center" align="center">
-BYU INFORMATION Systems          </Typography>
+        BYU INFORMATION Systems          
+    </Typography>
     <ImageList sx={{ width: 450, height: 1000 }}>
         <AppAppBar />
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">Completed BYU IS Courses</ListSubheader>
+        <ListSubheader component="div">Completed BYU IS Courses/Skills</ListSubheader>
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -53,26 +54,26 @@ BYU INFORMATION Systems          </Typography>
 const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-    author: '@bkristastucchio',
+    title: 'React',
+    author: 'Web Development (IS 542)',
     rows: 2,
     cols: 2,
     featured: true,
   },
   {
     img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
-    author: '@rollelflex_graphy726',
+    title: 'Python/Django',
+    author: 'Web Development (IS 403)',
   },
   {
     img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
-    author: '@helloimnik',
+    title: 'C# ASP.NET',
+    author: 'Full-stack Development (IS 413)',
   },
   {
     img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
-    author: '@nolanissac',
+    title: 'SQL',
+    author: 'Systems Development (IS402)',
     cols: 2,
   },
   {
