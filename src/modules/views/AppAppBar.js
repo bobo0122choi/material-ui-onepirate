@@ -98,7 +98,7 @@ function AppAppBar(props) {
               {"BYU MISM"}
             </Typography>
             </Link> 
-            <Link to={"/signup"}>
+            <Link to={"/model"}>
             <Typography
               variant="h6"
               underline="none"
@@ -107,7 +107,7 @@ function AppAppBar(props) {
               {"freelance model"}
             </Typography>
             </Link>
-            <Link to={"/signup"}>
+            <Link to={"/engineer"}>
             <Typography
               variant="h6"
               underline="none"
@@ -118,17 +118,17 @@ function AppAppBar(props) {
             </Link>
         
          
-            <Link to={"/signin"}>
+            <Link to={"/nftartist"}>
               <Typography
                 color="inherit"
                 variant="h6"
                 underline="none"
-                className={classes.rightLink}
+                className={clsx(classes.rightLink, classes.linkSecondary)}
               >
                 {"NFT Artist"}
               </Typography>
             </Link>
-            <Link to={"/signup"}>
+            <Link to={"/singer"}>
             <Typography
               variant="h6"
               underline="none"
@@ -138,7 +138,7 @@ function AppAppBar(props) {
             </Typography>
             </Link>
             
-            <Link to={"/signup"}>
+            <Link to={"/foodcritic"}>
             <Typography
               variant="h6"
               underline="none"

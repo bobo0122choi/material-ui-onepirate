@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
-import { Link } from "react-router-dom";
 
 const backgroundImage = "../../public/logo192.png" ;
 
@@ -73,7 +72,7 @@ function ProductHero(props) {
       Keep scrolling to find out how!
 
       </Typography>
-      <Link to={"/NFTs"}>
+      
       <Button
       color="secondary"
         variant="outlined"
@@ -81,10 +80,11 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
+        href="https://opensea.io/collection/starry-combo"
       >
         Shop My NFTs
       </Button>
-      </Link>
+     
       <Typography variant="body2" color="inherit" className={classes.more}>
       </Typography>
     </ProductHeroLayout>

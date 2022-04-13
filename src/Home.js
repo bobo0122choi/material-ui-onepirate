@@ -15,6 +15,12 @@ import Terms from "./Terms";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import ByuMISM from "./ByuMISM";
+import Model from "./Model";
+import NFTArtist from "./NFTArtist";
+import Engineer from "./Engineer";
+import Singer from "./Singer";
+import FoodCritic from "./FoodCritic";
+
 function App() {
   return (
     <Router>
@@ -36,6 +42,21 @@ function App() {
         </Route>
         <Route path="/byumism">
           <ByuMISM />
+        </Route>
+        <Route path="/model">
+          <Model />
+        </Route>
+        <Route path="/nftartist">
+          <NFTArtist />
+        </Route>
+        <Route path="/engineer">
+          <Engineer />
+        </Route>
+        <Route path="/singer">
+          <Singer />
+        </Route>
+        <Route path="/foodcritic">
+          <FoodCritic />
         </Route>
       </Switch>
     </Router>

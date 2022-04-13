@@ -13,11 +13,11 @@ import Typography from './modules/components/Typography';
 export default function TitlebarImageList() {
   return (
       <>
-    <AppForm>
-    <Typography variant="h3" gutterBottom marked="center" align="center">
+    <AppForm sm={{ width: 850, height: 1300 }} align="center">
+    <Typography variant="h2" gutterBottom marked="center" align="center">
         BYU INFORMATION Systems          
     </Typography>
-    <ImageList sx={{ width: 450, height: 1000 }}>
+    <ImageList xs={{ width: 800, height: 1000 }} sm={{ width: 300, height: 1000 }}>
         <AppAppBar />
       <ImageListItem key="Subheader" cols={2}>
         <ListSubheader component="div">Completed BYU IS Courses/Skills</ListSubheader>
@@ -35,7 +35,7 @@ export default function TitlebarImageList() {
             subtitle={item.author}
             actionIcon={
               <IconButton
-                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                sx={{ color: 'rgba(255, 255, 255, 0.5)' }}
                 aria-label={`info about ${item.title}`}
               >
                 <InfoIcon />
@@ -53,7 +53,7 @@ export default function TitlebarImageList() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: 'https://www.freecodecamp.org/news/content/images/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png',
     title: 'React',
     author: 'Web Development (IS 542)',
     rows: 2,
@@ -61,29 +61,29 @@ const itemData = [
     featured: true,
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: 'https://miro.medium.com/max/1200/1*slHeZngyeUr7ypEz7MNL5w.png',
     title: 'Python/Django',
     author: 'Web Development (IS 403)',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+    img: 'https://raw.githubusercontent.com/sumitc91/sumitc91.github.io/master/Blogs/23a73932-d77d-4bd4-b4ab-06ea4d5183d3_c-sharp-dotnet.jpg',
     title: 'C# ASP.NET',
     author: 'Full-stack Development (IS 413)',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+    img: 'https://cdn.ucberkeleybootcamp.com/wp-content/uploads/sites/106/2020/03/SQL-Coding-Class-San-Francisco-1.jpeg',
     title: 'SQL',
     author: 'Systems Development (IS402)',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+    img: 'http://eagletflysolutions.com/wp-content/uploads/2022/01/python-for-data-analysis-course-500x500-1.png',
     title: 'Python Data Analytics',
     author: 'Data Engineering (IS415)',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+    img: 'https://miro.medium.com/max/1400/1*aVJ7LHqiKsQX0rTfDmtQXA.jpeg',
     title: 'Python Machine Learning',
     author: 'Data Engineering (IS455)',
     rows: 2,
@@ -91,36 +91,26 @@ const itemData = [
     featured: true,
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
-    author: '@tjdragotta',
+    img: 'https://4.bp.blogspot.com/-s2EhTt57oeU/XHtQtO1QNLI/AAAAAAAANW8/KYkPQEZUyocSpA2RzqCcVt31imXPi63RACLcBGAs/s1600/Free%2BCourses%2Bto%2Blearn%2BJavaScript.jpg',
+    title: 'JavaScript',
+    author: 'Web Development (IS403)',
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-    author: '@katie_wasserman',
+    img: 'https://www.umass.edu/archivenewsoffice/sites/default/files/styles/article_small/public/tableau-software.jpg',
+    title: 'Tableau',
+    author: 'Visual Analytics Platform (IS 201)',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
-    author: '@silverdalex',
+    img: 'https://stepinlogic.com/wp-content/uploads/2020/07/aws-logo.png',
+    title: 'AWS Cloud',
+    author: 'Cloud Engineering (IS 531)',
     rows: 2,
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
-    author: '@shelleypauls',
+    img: 'https://4.bp.blogspot.com/-gj_o1RC2bdI/WvUauV4deYI/AAAAAAAABsY/hGNZargUrcQLnjWcn3PhXk2HFk2DAvdXQCLcBGAs/s1600/0-WdTF28uxyxJpfbnn.jpgf',
+    title: 'Metasploitable2',
+    author: 'Information Security Mngmnt (IS 555)'
   },
-  {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
-    author: '@peterlaster',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
-    author: '@southside_customs',
-    cols: 2,
-  },
+
 ];
