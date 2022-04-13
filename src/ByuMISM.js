@@ -78,14 +78,14 @@ const itemData = [
   },
   {
     img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
-    author: '@hjrc33',
+    title: 'Python Data Analytics',
+    author: 'Data Engineering (IS415)',
     cols: 2,
   },
   {
     img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
-    author: '@arwinneil',
+    title: 'Python Machine Learning',
+    author: 'Data Engineering (IS455)',
     rows: 2,
     cols: 2,
     featured: true,

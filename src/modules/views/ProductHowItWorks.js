@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
-import { Link } from "react-router-dom";
 
 const styles = (theme) => ({
   root: {

@@ -1,13 +1,12 @@
 import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
-import React, { useState }  from 'react';
+import React from 'react';
 import {
   Box,
   Button,
   Checkbox,
   FormHelperText,
   TextField,
-  makeStyles,
 } from "@material-ui/core";
 import Typography from './modules/components/Typography';
 import AppFooter from './modules/views/AppFooter';
@@ -17,23 +16,9 @@ import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { Formik } from "formik";
 
-const useStyles = makeStyles((theme) => ({
-  form: {
-    marginTop: theme.spacing(6),
-  },
-  button: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(2),
-  },
-  feedback: {
-    marginTop: theme.spacing(2),
-  },
-}));
 
 function SignUp() {
-  const classes = useStyles();
-  const [isLoading, setIsLoading] = useState(false);
-  const [newUser, setNewUser] = useState(null);
+
 
   return (
     <React.Fragment>
@@ -74,19 +59,7 @@ function SignUp() {
                   "This field must be checked"
                 ),
               })}
-              onSubmit={async (values) => {
-                setIsLoading(true);
-                try {
-                  /*const newUser = await Auth.signUp({
-                    username: values.email,
-                    password: values.password,
-                  });*/
-                  setIsLoading(false);
-                  setNewUser(newUser);
-                } catch (e) {
-                  setIsLoading(false);
-                }
-              }}
+             
             >
               {({
                 errors,

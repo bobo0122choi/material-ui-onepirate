@@ -6,7 +6,6 @@ import {
   Box,
   Button,
   TextField,
-  makeStyles,
 } from "@material-ui/core";
 import Typography from './modules/components/Typography';
 import AppFooter from './modules/views/AppFooter';
@@ -15,21 +14,9 @@ import AppForm from './modules/views/AppForm';
 import * as Yup from "yup";
 import { Formik } from "formik";
 
-const useStyles = makeStyles((theme) => ({
-  form: {
-    marginTop: theme.spacing(6),
-  },
-  button: {
-    marginTop: theme.spacing(3),
-    marginBottom: theme.spacing(2),
-  },
-  feedback: {
-    marginTop: theme.spacing(2),
-  },
-}));
+
 
 function SignIn() {
-  const classes = useStyles();
 
   return (
     <React.Fragment>

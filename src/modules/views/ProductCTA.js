@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
 
