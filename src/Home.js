@@ -14,7 +14,7 @@ import Privacy from "./Privacy";
 import Terms from "./Terms";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
-
+import ByuMISM from "./ByuMISM";
 function App() {
   return (
     <Router>
@@ -33,6 +33,9 @@ function App() {
         </Route>
         <Route path="/privacy">
           <Privacy />
+        </Route>
+        <Route path="/byumism">
+          <ByuMISM />
         </Route>
       </Switch>
     </Router>

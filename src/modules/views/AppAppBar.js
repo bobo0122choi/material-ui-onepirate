@@ -89,7 +89,7 @@ function AppAppBar(props) {
             </Typography>
           </Link>
           <div className={classes.right}>
-          <Link to={"/signup"}>
+          <Link to={"/byumism"}>
             <Typography
               variant="h6"
               underline="none"

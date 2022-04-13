@@ -21,7 +21,7 @@ const styles = (theme) => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: "pink",
     padding: theme.spacing(8, 3),
   },
   cardContent: {
@@ -78,15 +78,15 @@ function ProductCTA(props) {
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
             <form onSubmit={handleSubmit} className={classes.cardContent}>
-              <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+              <Typography variant="h2" component="h2" gutterBottom >
+                Want to get in touch with me?
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                Email me and I will get back to you!
               </Typography>
-              <TextField noBorder className={classes.textField} placeholder="Your email" />
-              <Button type="submit" color="primary" variant="contained" className={classes.button}>
-                Keep me updated
+              <br></br>
+              <Button  color="primary" variant="contained" className={classes.button} href="mailto:bobo0122choi@gmail.com" >
+                Send an Email
               </Button>
             </form>
           </div>
