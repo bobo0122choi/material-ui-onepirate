@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.light,
+  position: 'absolute', 
+  left: 0, 
+  right: 0, 
+  paddingleft: 0
   },
   container: {
     marginTop: theme.spacing(8),
@@ -131,10 +135,7 @@ export default function AppFooter() {
                 <a href="https://www.linkedin.com/in/bobo-choi/">Bobo's LinkedIn Profile</a>
               </li>
             </ul>
-         
-         
-          </Grid>
-      
+          </Grid>   
         </Grid>
       </Container>
     </Typography>

@@ -5,7 +5,7 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "../components/AppBar";
 import Toolbar, { styles as toolbarStyles } from "../components/Toolbar";
 import { Link } from "react-router-dom";
-import { Typography } from "@material-ui/core";
+import { Typography, Button } from "@material-ui/core";
 
 const styles = (theme) => ({
   title: {
@@ -17,14 +17,15 @@ const styles = (theme) => ({
   
       },
     [theme.breakpoints.up('sm')]: {
-      fontSize: 14,
+      fontSize: 18,
       color: theme.palette.common.white,
-      marginLeft: theme.spacing(2),
+      marginLeft: theme.spacing(0.5),
   
       },
       [theme.breakpoints.up('md')]: {
         fontSize: 24,
         color: theme.palette.common.white,
+        marginLeft: theme.spacing(1),
       },
   },
   placeholder: toolbarStyles(theme).root,
@@ -56,8 +57,6 @@ const styles = (theme) => ({
     fontSize: 11,
     color: theme.palette.common.white,
     marginLeft: theme.spacing(2),
-
-
     },
     [theme.breakpoints.up('md')]: {
       fontSize: 16,
@@ -69,6 +68,17 @@ const styles = (theme) => ({
   linkSecondary: {
     color: theme.palette.secondary.main,
   },
+  buttonNFT:{
+   
+    [theme.breakpoints.up('xs')]: {
+      marginTop:  theme.spacing(-1.5),
+      },
+    [theme.breakpoints.up('sm')]: {
+      marginTop:  theme.spacing(0),
+
+
+    },
+  }
 });
 
 function AppAppBar(props) {
@@ -118,16 +128,16 @@ function AppAppBar(props) {
             </Link>
         
          
-            <Link to={"/nftartist"}>
-              <Typography
+            {/* <Link to={"/nftartist"}> */}
+              <Button
                 color="inherit"
                 variant="h6"
                 underline="none"
-                className={clsx(classes.rightLink, classes.linkSecondary)}
-              >
-                {"NFT Artist"}
-              </Typography>
-            </Link>
+                className={clsx(classes.buttonNFT, classes.rightLink, classes.linkSecondary)}
+                href="https://opensea.io/bobo0122">                        
+                NFT Artist
+              </Button>
+            {/* </Link> */}
             <Link to={"/singer"}>
             <Typography
               variant="h6"
